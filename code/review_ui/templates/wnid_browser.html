@@ -1,0 +1,726 @@
+<html>
+    <head>
+        <script src="http://127.0.0.1:5043/webui_static/vue.js"></script>
+        <script src="http://127.0.0.1:5043/webui_static/vue-router.js"></script>
+        <script src="http://127.0.0.1:5043/webui_static/axios.min.js"></script>
+        <script src="http://127.0.0.1:5043/webui_static/lodash.min.js"></script>
+
+        <link href='static/roboto.css' rel="stylesheet">
+        <link href="http://127.0.0.1:5043/webui_static/vuetify.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+        <script src="http://127.0.0.1:5043/webui_static/vuetify.js"></script>
+
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+        <style>
+            .thin_input input {padding-top: 0px; padding-bottom: 0px; color: #2196F3 !important}
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <v-app>
+                <v-content>
+                    <v-container>
+                        <v-layout row>
+                            <v-flex lg6>
+                                <v-text-field v-model="search_term" label="wnid or search term" outline append-icon="search" v-on:keyup.enter="find_wnids"> </v-text-field>
+                            </v-flex>
+                            <v-flex lg3>
+                                <v-btn v-on:click="find_wnids">Find</button> </v-btn>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout>
+                            <h5 class="headline">Matching wnids</h5>
+                        </v-layout>
+                        <v-layout row wrap>
+                            <v-list three-line>
+                                <v-list-tile v-for="info in search_results" :key="info.wnid" ripple @click="load_wnid(info, true)">
+                                    <v-list-tile-content>
+                                        <v-list-tile-title> <span class="font-weight-bold mr-2">[[ info.wnid ]] </span> [[ info.synset.join(', ') ]] </v-list-tile-title>
+                                        <v-list-tile-sub-title> [[ info.gloss]] </v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            </v-list>
+                        </v-layout>
+                        <v-layout column v-if="cur_wnid_info != null">
+                            <v-flex>
+                                <h4 class="display-1 mt-4 mb-2">
+                                    <span class="font-weight-bold mr-2">[[ cur_wnid_info.wnid ]] </span> [[ cur_wnid_info.synset.join(', ') ]]
+                                </h4>
+                            </v-flex>
+                            <v-flex>
+                                <span class="font-weight-bold">Gloss: </span> [[ cur_wnid_info.gloss ]]
+                            </v-flex>
+                            <v-flex v-for="cur_page in cur_wnid_info.wikipedia_pages" :key="cur_page" class='my-1'>
+                                <a :href="cur_page"> [[ cur_page ]] </a>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row wrap v-if="wnid_data != null">
+                            <v-flex>
+                                <div>[[ Object.keys(wnid_data.candidates).length ]] candidates in total </div>
+                                <div>[[ total_num_blacklisted_candidates ]] blacklisted candidates </div>
+                                <div>[[ total_num_near_duplicate_candidates ]] near-duplicate candidates </div>
+                                <div class="mt-2">[[ num_annotated_val_imgs ]] validation images with MTurk annotations </div>
+                                <div class="mb-3">[[ avg_val_selection_frequency.toFixed(2) ]] average MTurk selection frequency for val images</div>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row wrap v-if="wnid_data != null">
+                            <v-flex lg6 md9>
+                                <div style="display: inline-block; max-width: 100%">
+                                <v-data-table :headers="histogram_table_headers" :items="histogram_table_items" hide-actions class="elevation-1">
+                                    <template slot="items" slot-scope="props">
+                                        <td> [[ props.item.name ]] </td>
+                                        <td class="text-xs-right"> [[ props.item.val_images ]] </td>
+                                        <td class="text-xs-right font-weight-bold"> [[ props.item.target ]] </td>
+                                        <td class="text-xs-right font-weight-bold" :class="{'green--text': props.item.target <= props.item.valid_candidates, 'red--text': props.item.target > props.item.valid_candidates }"> [[ props.item.valid_candidates ]] </td>
+                                        <td class="text-xs-right"> [[ props.item.all_candidates ]] </td>
+                                    </template>
+                                </v-data-table>
+                                </div>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row wrap v-if="wnid_data != null">
+                            <v-flex lg6><h5 class="headline mt-3">Validation images</h5></v-flex>
+                        </v-layout>
+                        <v-layout row wrap v-if="wnid_data != null">
+                            <v-flex shrink style="width: 600px">
+                                <v-slider min="0" max="50" v-model="num_val_imgs_to_show" label="Num val images to show"></v-slider>
+                            </v-flex>
+                            <v-flex shrink style="width: 60px" class="ml-2">
+                                <v-text-field v-model="num_val_imgs_to_show" type="number" hide-details single-line></v-text-field>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row wrap v-if="cur_wnid_info != null && wnid_data == null">
+                            Loading ...
+                        </v-layout>
+                    </v-container>
+                    <v-container grid-list-md fluid v-if="wnid_data != null">
+                        <v-layout row wrap align-end justify-center>
+                            <v-flex v-for="img in selected_val_imgs" :key="img" class="my-3 mx-1">
+                                <v-layout column fluid align-center>
+                                    <v-flex class="pa-0">
+                                        <img :src="wnid_data.val_imgs[img].url" style="max-width:300px; max-height:300px">
+                                    </v-flex>
+                                    <v-flex class="pa-0">
+                                        [[ img ]]
+                                    </v-flex>
+                                    <v-flex class="pa-0">
+                                        MTurk : [[ wnid_data.val_imgs[img].selection_frequency.toFixed(2) ]] ([[ wnid_data.val_imgs[img].num_assignments ]])
+                                    </v-flex>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                    <v-container v-if="wnid_data != null">
+                        <v-layout row wrap>
+                            <v-flex><h5 class="headline mt-5">Candidate images</h5></v-flex>
+                        </v-layout>
+                        <v-layout row>
+                            <v-flex><v-switch label="Show not blacklisted" v-model="show_not_blacklisted_candidates"></v-switch></v-flex>
+                            <v-flex><v-switch label="Show blacklisted" v-model="show_blacklisted_candidates"></v-switch></v-flex>
+                            <v-flex><v-switch label="Show not near-duplicates" v-model="show_not_near_duplicate_candidates"></v-switch></v-flex>
+                            <v-flex><v-switch label="Show near-duplicates" v-model="show_near_duplicate_candidates"></v-switch></v-flex>
+                        </v-layout>
+                        <v-layout row>
+                            <v-flex shrink>
+                                <v-subheader class="pl-0">Selection frequency range:</v-subheader>
+                            </v-flex>
+                            <v-flex shrink style="width: 60px">
+                                <v-text-field
+                                    v-model="candidate_sel_freq_interval[0]"
+                                    class="mt-0"
+                                    hide-details
+                                    single-line
+                                    type="number"
+                                    :background-color="freq_text_field_color"
+                                ></v-text-field>
+                            </v-flex>
+                            <v-flex class="px-3">
+                                <v-range-slider v-model="candidate_sel_freq_interval"
+                                        max="1.0"
+                                        min="0.0"
+                                        step="0.01"
+                                        :color="freq_slider_color"></v-range-slider>
+                            </v-flex>
+                            <v-flex shrink style="width: 60px">
+                                <v-text-field
+                                    v-model="candidate_sel_freq_interval[1]"
+                                    class="mt-0"
+                                    hide-details
+                                    single-line
+                                    type="number"
+                                    :background-color="freq_text_field_color"
+                                ></v-text-field>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row justify-start align-center class="mb-2">
+                            <v-flex shrink>
+                                <v-subheader class="pl-0">Or frequency bins:</v-subheader>
+                            </v-flex>
+                            <v-flex shrink>
+                                <v-btn-toggle v-model="selected_bins" multiple>
+                                    <v-btn v-for="bin_id in _.range(bin_boundaries.length)" :key="bin_id" :color="bin_buttons_color" v-on:click="use_bin_buttons"> [[ bin_strings[bin_id] ]] </v-btn>
+                                </v-btn-toggle>
+                            </v-flex>
+                            <v-flex shrink>
+                                <v-btn v-on:click="select_nonempty_target_bins" class="text-lowercase font-weight-regular">Select non-empty target bins</v-btn>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row>
+                            <v-flex shrink style="width: 300px">
+                                <v-select :items="possible_candidate_sort_orders" label="Sort order" v-model="candidate_sort_order"></v-select>
+                            </v-flex>
+                            <v-flex lg-2>
+                                <v-radio-group v-model="candidate_sort_direction" row>
+                                    <v-radio label="Ascending" value="ascending"></v-radio>
+                                    <v-radio label="Descending" value="descending"></v-radio>
+                                </v-radio-group>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout row>
+                            <span class="subheading pl-0"> Showing [[ selected_cids.length ]] candidate images </span>
+                        </v-layout>
+                        <v-layout row justify-start class="my-2">
+                            <v-flex shrink style="height: 70px">
+                                <v-btn v-on:click="submit_selections" large color="primary" class="ml-0">Submit changes</button> </v-btn>
+                            </v-flex>
+                            <v-flex v-if="show_wait" style="align-self: center">
+                                <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                            </v-flex>
+                            <v-flex grow>
+                                <v-alert v-model="show_success" type="success">
+                                    Successfully updated
+                                    (Added [[ num_added_to_blacklist ]] candidates to the blacklist, removed [[ num_removed_from_blacklist ]]. Added [[ added_ndc_set_sizes.length ]] near-duplicate sets.)
+                                </v-alert>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                    <v-container grid-list-md fluid v-if="wnid_data != null" class="mt-0">
+                        <v-layout row wrap align-end justify-center>
+                            <v-flex v-for="cid in selected_cids" :key="cid" class="my-3 mx-1">
+                                <v-layout column fluid align-center>
+                                    <v-flex class="pa-0">
+                                        <img :src="wnid_data.candidates[cid].url" style="max-width:300px; max-height:300px">
+                                    </v-flex>
+                                    <v-flex class="pa-0">
+                                        [[ cid ]]
+                                    </v-flex>
+                                    <v-flex class="pa-0">
+                                        [[ wnid_data.candidates[cid].date_taken ]]
+                                    </v-flex>
+                                    <v-flex class="pa-0">
+                                        MTurk : [[ wnid_data.candidates[cid].selection_frequency.toFixed(2) ]] ([[ wnid_data.candidates[cid].num_assignments ]])
+                                    </v-flex>
+                                    <v-flex class="pa-0 mt-1">
+                                        <v-layout row fluid align-center>
+                                            <v-flex class="pa-0 mr-0.5">
+                                                Blklst:
+                                            </v-flex>
+                                            <v-flex class="pa-0 mr-1">
+                                                <v-checkbox v-model="cds_blacklist_selection[cid]" hide-details class="pa-0 ma-0" @change="hide_success"></v-checkbox>
+                                            </v-flex>
+                                            <v-flex class="pa-0 mr-1">
+                                                Ndc set:
+                                            </v-flex>
+                                            <v-flex class="pa-0" style="width:40px">
+                                                <v-text-field v-model="cds_ndc_input[cid]" single-line hide-details class="pa-0 ma-0 thin_input" @click="hide_success"></v-text-field>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-flex>
+                                <v-layout>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-content>
+            </v-app>
+            </div>
+        </div>
+
+        <script>
+            var router = new VueRouter({
+                mode: 'history',
+                routes: []
+            });
+            var app = new Vue({
+                router: router,
+                el: '#app',
+                delimiters: ['[[',']]'],
+                data: {
+                    bin_splits: [0.2, 0.4, 0.6, 0.8],
+                    target_num: 10,
+                    histogram_table_headers: [
+                        {
+                            text: 'Bin',
+                            align: 'left',
+                            sortable: false,
+                            value: 'name',
+                        },
+                        {
+                            text: 'Val images',
+                            align: 'right',
+                            sortable: false,
+                            value: 'val_images',
+                        },
+                        {
+                            text: 'Target',
+                            align: 'right',
+                            sortable: false,
+                            value: 'target',
+                        },
+                        {
+                            text: 'Valid candidates',
+                            align: 'right',
+                            sortable: false,
+                            value: 'valid_candidates'
+                        },
+                        {
+                            text: 'All candidates',
+                            align: 'right',
+                            sortable: false,
+                            value: 'all_candidates'
+                        }
+                    ],
+
+                    search_term: '',
+                    search_results: [],
+                    cur_wnid_info: null,
+                    wnid_data: null,
+
+                    num_val_imgs_to_show: 10,
+                    freq_selection: 'freq_slider',
+                    candidate_sel_freq_interval: [0.7, 1.0],
+                    selected_bins: [],
+                    candidate_sort_order: "Date taken",
+                    candidate_sort_direction: "ascending",
+                    cds_blacklist_selection: {},
+                    cds_ndc_input: {},
+                    possible_candidate_sort_orders: ["Date taken", 'Selection frequency'],
+                    show_blacklisted_candidates: false,
+                    show_not_blacklisted_candidates: true,
+                    show_near_duplicate_candidates: false,
+                    show_not_near_duplicate_candidates: true,
+
+                    show_success: false,
+                    show_wait: false,
+                    num_added_to_blacklist: 0,
+                    num_removed_from_blacklist: 0,
+                    added_ndc_set_sizes: []
+                },
+                computed: {
+                    num_bins: function() {
+                        return this.bin_splits.length;
+                    },
+                    bin_boundaries: function() {
+                        var res = [[0.0, this.bin_splits[0]]];
+                        for (var ii = 0; ii < this.bin_splits.length - 1; ++ii) {
+                            res.push([this.bin_splits[ii], this.bin_splits[ii + 1]]);
+                        }
+                        res.push([this.bin_splits[this.bin_splits.length - 1], 1.0]);
+                        return res;
+                    },
+                    bin_strings: function() {
+                        var res = [];
+                        for (var ii = 0; ii < this.bin_splits.length; ++ii) {
+                            res.push(`[${this.bin_boundaries[ii][0]}, ${this.bin_boundaries[ii][1]})`);
+                        }
+                        res.push(`[${this.bin_splits[this.bin_splits.length - 1]}, 1.0]`);
+                        return res;
+                    },
+                    val_images_histogram: function() {
+                        var res = new Array(this.bin_boundaries.length);
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            res[ii] = 0;
+                        }
+                        for (const [img, img_data] of Object.entries(this.wnid_data.val_imgs)) {
+                            if (img_data.num_assignments > 0) {
+                                res[img_data.histogram_bin] += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    valid_candidates_histogram: function() {
+                        var res = new Array(this.bin_boundaries.length);
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            res[ii] = 0;
+                        }
+                        for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                            if (cand_data.num_assignments > 0 && !cand_data.is_blacklisted && !cand_data.is_near_duplicate) {
+                                res[cand_data.histogram_bin] += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    target_histogram: function()  {
+                        var res = new Array(this.bin_boundaries.length);
+                        var fractional_hist = new Array(this.bin_boundaries.length);
+                        var val_sum = 0;
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            val_sum += this.val_images_histogram[ii];
+                        }
+                        var floor_hist = new Array(this.bin_boundaries.length);
+                        var remainder_hist = new Array(this.bin_boundaries.length);
+                        var floor_sum = 0;
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            fractional_hist[ii] = this.target_num * this.val_images_histogram[ii] / val_sum;
+                            floor_hist[ii] = Math.floor(fractional_hist[ii]);
+                            res[ii] = floor_hist[ii];
+                            floor_sum += floor_hist[ii];
+                            remainder_hist[ii] = fractional_hist[ii] - floor_hist[ii];
+                        }
+                        var remainder = this.target_num - floor_sum;
+                        var bin_indices = new Array(this.bin_boundaries.length);
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            bin_indices[ii] = ii;
+                        }
+                        bin_indices.sort(function(ii, jj){
+                            if (remainder_hist[ii] < remainder_hist[jj]) {
+                                return -1;
+                            }
+                            if (remainder_hist[ii] > remainder_hist[jj]) {
+                                return 1;
+                            }
+                            return ii - jj;
+                        });
+                        for (var ii = 0; ii < remainder; ++ii) {
+                            res[bin_indices[bin_indices.length - ii - 1]] += 1;
+                        }
+                        return res;
+                    },
+                    all_candidates_histogram: function() {
+                        var res = new Array(this.bin_boundaries.length);
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            res[ii] = 0;
+                        }
+                        for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                            if (cand_data.num_assignments > 0) {
+                                res[cand_data.histogram_bin] += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    histogram_table_items: function() {
+                        var res = [];
+                        for (var ii = 0; ii < this.bin_boundaries.length; ++ii) {
+                            res.push({name: this.bin_strings[ii],
+                                      val_images: this.val_images_histogram[ii],
+                                      target: this.target_histogram[ii],
+                                      valid_candidates: this.valid_candidates_histogram[ii],
+                                      all_candidates: this.all_candidates_histogram[ii]});
+                        }
+                        return res;
+                    },
+
+                    bin_buttons_color: function() {
+                        if (this.freq_selection == 'bin_buttons') {
+                            return "blue";
+                        } else {
+                            console.assert(this.freq_selection == 'freq_slider');
+                            return "grey";
+                        }
+                    },
+                    freq_slider_color: function() {
+                        if (this.freq_selection == 'bin_buttons') {
+                            return "grey";
+                        } else {
+                            console.assert(this.freq_selection == 'freq_slider');
+                            return "blue";
+                        }
+                    },
+                    freq_text_field_color: function(){
+                        if (this.freq_selection == 'bin_buttons') {
+                            return "grey lighten-2";
+                        } else {
+                            console.assert(this.freq_selection == 'freq_slider');
+                            return "";
+                        }
+                    },
+
+                    total_num_blacklisted_candidates: function() {
+                        var res = 0;
+                        for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                            if (cand_data.is_blacklisted) {
+                                res += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    total_num_near_duplicate_candidates: function() {
+                        var res = 0;
+                        for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                            if (cand_data.is_near_duplicate) {
+                                res += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    num_annotated_val_imgs: function() {
+                        var res = 0;
+                        for (const [img, img_data] of Object.entries(this.wnid_data.val_imgs)) {
+                            if (img_data.num_assignments > 0) {
+                                res += 1;
+                            }
+                        }
+                        return res;
+                    },
+                    avg_val_selection_frequency: function() {
+                        var num_selected = 0;
+                        var sel_freq_sum = 0;
+                        for (const [img, img_data] of Object.entries(this.wnid_data.val_imgs)) {
+                            if (img_data.num_assignments > 0) {
+                                num_selected += 1;
+                                sel_freq_sum += img_data.selection_frequency;
+                            }
+                        }
+                        return sel_freq_sum / num_selected;
+                    },
+                    selected_val_imgs: function() {
+                        var res = [];
+                        for (const [img, img_data] of Object.entries(this.wnid_data.val_imgs)) {
+                            res.push(img);
+                        }
+                        return res.slice(0, this.num_val_imgs_to_show);
+                    },
+                    selected_cids: function() {
+                        var res = [];
+                        for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                            if (!this.show_blacklisted_candidates && cand_data.is_blacklisted) {
+                                continue;
+                            }
+                            if (!this.show_not_blacklisted_candidates && !cand_data.is_blacklisted) {
+                                continue;
+                            }
+                            if (!this.show_near_duplicate_candidates && cand_data.is_near_duplicate) {
+                                continue;
+                            }
+                            if (!this.show_not_near_duplicate_candidates && !cand_data.is_near_duplicate) {
+                                continue;
+                            }
+                            if (this.freq_selection == 'bin_buttons') {
+                                if (!cand_data.hasOwnProperty('histogram_bin')) {
+                                    continue;
+                                }
+                                if (!this.selected_bins.includes(cand_data.histogram_bin)) {
+                                    continue;
+                                }
+                            } else {
+                                console.assert(this.freq_selection == 'freq_slider');
+                                if (cand_data.selection_frequency < this.candidate_sel_freq_interval[0]) {
+                                    continue;
+                                }
+                                if (cand_data.selection_frequency > this.candidate_sel_freq_interval[1]) {
+                                    continue;
+                                }
+                            }
+                            res.push(cid);
+                        }
+                        if (this.candidate_sort_order == "Date taken") {
+                            var cds = this.wnid_data.candidates;
+                            res.sort(function(a, b) {
+                                if (cds[a].date_taken < cds[b].date_taken) {
+                                    return -1;
+                                }
+                                if (cds[a].date_taken > cds[b].date_taken) {
+                                    return 1;
+                                }
+                                return 0;
+                            });
+                        } else if (this.candidate_sort_order == "Selection frequency") {
+                            var cds = this.wnid_data.candidates;
+                            res.sort(function(a, b) {
+                                return cds[a].selection_frequency - cds[b].selection_frequency;
+                            });
+                        }
+                        if (this.candidate_sort_direction == 'descending') {
+                            res.reverse();
+                        }
+                        return res;
+                    }
+                },
+                mounted: function() {
+                    if ('q' in this.$route.query) {
+                        this.search_term = this.$route.query.q;
+                        this.find_wnids();
+                    }
+                },
+                watch: {
+                    candidate_sel_freq_interval: function (to, from) {
+                        this.freq_selection = 'freq_slider';
+                    },
+                    '$route' (to, from) {
+                        if ('q' in to.query) {
+                            if (to.query.q != this.search_term) {
+                                this.search_term = to.query.q;
+                                this.find_wnids();
+                            } else {
+                                if ('sel' in to.query) {
+                                    if (this.cur_wnid_info == null || to.query.sel != this.cur_wnid_info.wnid) {
+                                        for (const wnid_info of this.search_results) {
+                                            if (wnid_info.wnid == to.query.sel) {
+                                                this.load_wnid(wnid_info, false);
+                                                break;
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    if (this.search_results.length > 1) {
+                                        this.cur_wnid_info = null;
+                                        this.wnid_data = null;
+                                    }
+                                }
+                            }
+                        } else {
+                            this.search_term = '';
+                            this.search_results = [];
+                            this.cur_wnid_info = null;
+                            this.wnid_data = null;
+                        }
+                    }
+                },
+                methods: {
+                    get_bin_index: function(sel_freq) {
+                        console.assert(sel_freq >= 0.0);
+                        console.assert(sel_freq <= 1.0);
+                        var res = 0;
+                        for (var ii = 0; ii < this.num_bins; ++ii) {
+                            if (sel_freq < this.bin_splits[ii]) {
+                                return ii;
+                            }
+                        }
+                        return this.bin_splits.length;
+                    },
+                    use_bin_buttons: function() {
+                        this.freq_selection = 'bin_buttons';
+                    },
+                    use_freq_slider: function() {
+                        this.freq_selection = 'freq_slider';
+                    },
+                    select_nonempty_target_bins: function() {
+                        var new_selected_bins = [];
+                        for (var ii = 0; ii < this.target_histogram.length; ++ii) {
+                            if (this.target_histogram[ii] > 0) {
+                                new_selected_bins.push(ii);
+
+                            }
+                        }
+                        this.selected_bins = new_selected_bins;
+                        this.use_bin_buttons();
+                    },
+                    load_wnid: function(wnid_info, push_route) {
+                        this.cur_wnid_info = wnid_info;
+                        this.hide_success();
+                        this.get_wnid_data();
+                        if (push_route) {
+                            this.$router.push({path: 'wnid_browser', query: {q: this.search_term, sel: wnid_info.wnid}});
+                        }
+                    },
+                    find_wnids: function () {
+                        if (! ('q' in this.$route.query) || (this.$route.query.q != this.search_term)) {
+                            this.$router.push({path: 'wnid_browser', query: {q: this.search_term}});
+                        }
+                        this.search_results = [];
+                        this.cur_wnid_info = null;
+                        this.wnid_data = null;
+                        axios.get('/find_wnids', {params: {q: this.search_term}})
+                             .then(response => {
+                                this.search_results = response.data;
+                                if (this.search_results.length == 1) {
+                                    this.load_wnid(this.search_results[0]);
+                                } else if ('sel' in this.$route.query && this.search_results.length > 1) {
+                                    for (const wnid_info of this.search_results) {
+                                        if (wnid_info.wnid == this.$route.query.sel) {
+                                            this.load_wnid(wnid_info, false);
+                                            break;
+                                        }
+                                    }
+                                }
+                             });
+                    },
+                    augment_wnid_data: function(tmp_wnid_data) {
+                        var res = tmp_wnid_data;
+                        for (const [cid, cand_data] of Object.entries(res.candidates)) {
+                            if (cand_data.num_assignments > 0) {
+                                cand_data.histogram_bin = this.get_bin_index(cand_data.selection_frequency);
+                            }
+                        }
+                        for (const [img, img_data] of Object.entries(res.val_imgs)) {
+                            if (img_data.num_assignments > 0) {
+                                img_data.histogram_bin = this.get_bin_index(img_data.selection_frequency);
+                            }
+                        }
+                        return res;
+                    },
+                    get_wnid_data: function () {
+                        axios.get('/wnid/' + this.cur_wnid_info.wnid)
+                                .then(response => {
+                                    this.wnid_data = this.augment_wnid_data(response.data);
+                                    if (this.wnid_data.wnid != this.cur_wnid_info.wnid) throw "Received info for wrong wnid";
+                                    this.cds_blacklist_selection = {}
+                                    this.cds_ndc_input = {}
+                                    for (const [cid, cand_data] of Object.entries(this.wnid_data.candidates)) {
+                                        this.cds_blacklist_selection[cid] = cand_data.is_blacklisted;
+                                        this.cds_ndc_input[cid] = '';
+                                    }
+                                });
+                    },
+                    hide_success: function() {
+                        this.show_success = false;
+                        this.num_added_to_blacklist = 0;
+                        this.num_removed_from_blacklist = 0;
+                        this.added_ndc_set_sizes = [];
+                    },
+                    submit_selections: function () {
+                        var added_to_blacklist = [];
+                        var removed_from_blacklist = [];
+                        var cids_by_ndc_set = {};
+                        for (const cid of this.selected_cids) {
+                            if (!this.wnid_data.candidates[cid].is_blacklisted && this.cds_blacklist_selection[cid]) {
+                                added_to_blacklist.push(cid);
+                            }
+                            if (this.wnid_data.candidates[cid].is_blacklisted && !this.cds_blacklist_selection[cid]) {
+                                removed_from_blacklist.push(cid);
+                            }
+                            const ndc_set = this.cds_ndc_input[cid];
+                            if (ndc_set != '') {
+                                if (!(ndc_set in cids_by_ndc_set)) {
+                                    cids_by_ndc_set[ndc_set] = [];
+                                }
+                                cids_by_ndc_set[ndc_set].push(cid);
+                            }
+                        }
+                        var near_duplicate_sets = [];
+                        for (const [ndc_string, ndc_set] of Object.entries(cids_by_ndc_set)) {
+                            near_duplicate_sets.push(ndc_set);
+                        }
+                        post_msg = {
+                            'added_to_blacklist': added_to_blacklist,
+                            'removed_from_blacklist': removed_from_blacklist,
+                            'near_duplicate_sets': near_duplicate_sets
+                        };
+                        this.show_wait = true;
+                        axios.post('/update_candidates', post_msg)
+                                .then(response => {
+                                    this.show_wait = false;
+                                    this.show_success = true;
+                                    if ('num_added_to_blacklist' in response.data) {
+                                        this.num_added_to_blacklist = response.data.num_added_to_blacklist;
+                                    } else {
+                                        this.num_added_to_blacklist = 0;
+                                    }
+                                    if ('num_removed_from_blacklist' in response.data) {
+                                        this.num_removed_from_blacklist = response.data.num_removed_from_blacklist;
+                                    } else {
+                                        this.num_removed_from_blacklist = 0;
+                                    }
+                                    if ('near_duplicate_set_sizes' in response.data) {
+                                        this.added_ndc_set_sizes = response.data.near_duplicate_set_sizes;
+                                    } else {
+                                        this.added_ndc_set_sizes = [];
+                                    }
+                                    this.get_wnid_data();
+                                });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

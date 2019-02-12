@@ -1,0 +1,4002 @@
+{
+  "n01440764": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01443537": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01484850": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01491361": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01494475": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01496331": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01498041": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01514668": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01514859": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01518878": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01530575": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01531178": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01532829": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01534433": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01537544": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01558993": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01560419": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01580077": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01582220": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01592084": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01601694": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01608432": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01614925": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01616318": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01622779": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01629819": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01630670": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01631663": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01632458": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01632777": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01641577": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01644373": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01644900": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01664065": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01665541": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01667114": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01667778": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01669191": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01675722": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01677366": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01682714": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01685808": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01687978": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01688243": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01689811": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01692333": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01693334": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01694178": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01695060": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01697457": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01698640": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01704323": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01728572": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01728920": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01729322": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01729977": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01734418": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01735189": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01737021": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01739381": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01740131": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n01742172": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01744401": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01748264": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01749939": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01751748": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01753488": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01755581": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01756291": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01768244": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01770081": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01770393": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01773157": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01773549": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01773797": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01774384": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01774750": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01775062": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01776313": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01784675": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01795545": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01796340": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01797886": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01798484": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01806143": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01806567": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01807496": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01817953": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01818515": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01819313": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01820546": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01824575": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01828970": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01829413": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01833805": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01843065": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01843383": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01847000": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01855032": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01855672": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01860187": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01871265": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01872401": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01873310": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01877812": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01882714": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01883070": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01910747": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01914609": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01917289": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01924916": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01930112": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n01943899": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01944390": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01945685": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01950731": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01955084": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01968897": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01978287": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01978455": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01980166": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01981276": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01983481": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01984695": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01985128": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01986214": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n01990800": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02002556": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02002724": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02006656": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02007558": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02009229": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02009912": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02011460": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n02012849": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02013706": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02017213": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02018207": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02018795": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02025239": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02027492": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02028035": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02033041": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02037110": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02051845": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02056570": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02058221": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02066245": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02071294": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02074367": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02077923": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02085620": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02085782": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02085936": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02086079": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02086240": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02086646": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02086910": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02087046": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02087394": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02088094": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02088238": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02088364": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02088466": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02088632": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02089078": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02089867": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n02089973": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n02090379": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n02090622": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02090721": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02091032": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02091134": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02091244": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02091467": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02091635": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n02091831": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02092002": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02092339": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093256": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093428": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093647": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093754": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093859": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02093991": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02094114": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02094258": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02094433": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02095314": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02095570": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02095889": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02096051": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02096177": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02096294": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02096437": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02096585": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097047": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097130": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097209": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097298": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097474": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02097658": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02098105": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02098286": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02098413": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02099267": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02099429": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02099601": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02099712": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02099849": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02100236": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02100583": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02100735": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02100877": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02101006": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02101388": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02101556": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02102040": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02102177": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02102318": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02102480": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02102973": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02104029": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02104365": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105056": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105162": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105251": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105412": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105505": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105641": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02105855": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02106030": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02106166": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02106382": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02106550": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02106662": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02107142": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02107312": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02107574": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02107683": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02107908": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02108000": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02108089": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02108422": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02108551": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02108915": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02109047": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02109525": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02109961": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110063": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110185": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110341": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110627": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110806": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02110958": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02111129": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02111277": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02111500": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02111889": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02112018": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02112137": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02112350": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02112706": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113023": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113186": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113624": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113712": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113799": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02113978": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02114367": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02114548": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02114712": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02114855": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n02115641": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02115913": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02116738": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02117135": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02119022": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02119789": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02120079": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02120505": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02123045": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02123159": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02123394": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02123597": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02124075": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02125311": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02127052": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02128385": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02128757": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02128925": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02129165": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02129604": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02130308": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02132136": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02133161": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02134084": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02134418": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02137549": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02138441": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02165105": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02165456": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02167151": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02168699": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02169497": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02172182": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02174001": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02177972": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02190166": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02206856": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02219486": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02226429": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02229544": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02231487": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02233338": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02236044": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02256656": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02259212": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02264363": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02268443": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02268853": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02276258": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02277742": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02279972": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02280649": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02281406": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02281787": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02317335": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02319095": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02321529": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02325366": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02326432": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02328150": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02342885": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02346627": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02356798": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02361337": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02363005": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02364673": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02389026": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02391049": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02395406": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02396427": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02397096": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02398521": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02403003": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02408429": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02410509": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02412080": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02415577": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02417914": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02422106": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02422699": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02423022": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02437312": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02437616": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02441942": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02442845": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02443114": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02443484": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02444819": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02445715": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02447366": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02454379": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02457408": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02480495": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02480855": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02481823": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02483362": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02483708": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02484975": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02486261": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02486410": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02487347": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02488291": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02488702": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02489166": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02490219": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02492035": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02492660": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02493509": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02493793": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02494079": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02497673": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02500267": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02504013": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02504458": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02509815": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02510455": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02514041": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02526121": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02536864": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02606052": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02607072": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02640242": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02641379": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02643566": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02655020": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02666196": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02667093": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02669723": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02672831": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02676566": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02687172": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02690373": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02692877": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02699494": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02701002": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02704792": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02708093": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02727426": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02730930": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02747177": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02749479": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02769748": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02776631": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02777292": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02782093": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02783161": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02786058": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02787622": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02788148": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02790996": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02791124": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02791270": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02793495": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02794156": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02795169": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02797295": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02799071": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02802426": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02804414": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02804610": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02807133": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02808304": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02808440": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02814533": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02814860": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02815834": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02817516": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02823428": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02823750": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02825657": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02834397": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02835271": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02837789": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02840245": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02841315": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02843684": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02859443": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02860847": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02865351": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02869837": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02870880": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02871525": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02877765": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02879718": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02883205": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02892201": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02892767": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02894605": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02895154": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02906734": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02909870": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02910353": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02916936": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02917067": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02927161": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02930766": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02939185": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02948072": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02950826": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02951358": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02951585": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02963159": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02965783": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02966193": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02966687": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02971356": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02974003": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02977058": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02978881": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02979186": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02980441": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02981792": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02988304": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02992211": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02992529": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n02999410": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03000134": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03000247": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03000684": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03014705": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03016953": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03017168": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03018349": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03026506": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03028079": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03032252": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03041632": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03042490": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03045698": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03047690": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03062245": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03063599": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03063689": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03065424": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03075370": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03085013": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03089624": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03095699": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03100240": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03109150": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03110669": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03124043": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03124170": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03125729": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03126707": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03127747": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03127925": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03131574": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03133878": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03134739": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03141823": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03146219": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03160309": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03179701": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03180011": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03187595": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03188531": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03196217": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03197337": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03201208": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03207743": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03207941": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03208938": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03216828": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03218198": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03220513": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03223299": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03240683": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03249569": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03250847": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03255030": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03259280": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03271574": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03272010": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03272562": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03290653": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03291819": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03297495": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03314780": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03325584": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03337140": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03344393": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03345487": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03347037": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03355925": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03372029": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03376595": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03379051": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03384352": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03388043": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03388183": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03388549": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03393912": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03394916": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03400231": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03404251": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03417042": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03424325": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03425413": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03443371": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03444034": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03445777": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03445924": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03447447": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03447721": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03450230": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03452741": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03457902": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03459775": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03461385": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03467068": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03476684": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03476991": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03478589": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03481172": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03482405": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03483316": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03485407": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03485794": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03492542": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03494278": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03495258": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03496892": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03498962": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03527444": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03529860": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03530642": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03532672": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03534580": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03535780": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03538406": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03544143": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03584254": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03584829": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03590841": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03594734": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03594945": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03595614": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03598930": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03599486": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03602883": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03617480": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03623198": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03627232": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03630383": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03633091": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03637318": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03642806": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03649909": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03657121": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03658185": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03661043": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03662601": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03666591": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03670208": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03673027": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03676483": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03680355": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03690938": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03691459": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03692522": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03697007": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03706229": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03709823": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03710193": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03710637": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03710721": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03717622": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03720891": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03721384": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03724870": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03729826": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03733131": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03733281": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03733805": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03742115": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03743016": {
+    "problematic": false,
+    "reviewed": false
+  },
+  "n03759954": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03761084": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03763968": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03764736": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03769881": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03770439": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03770679": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03773504": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03775071": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03775546": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03776460": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03777568": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03777754": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03781244": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03782006": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03785016": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03786901": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03787032": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03788195": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03788365": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03791053": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03792782": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03792972": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03793489": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03794056": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03796401": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03803284": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03804744": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03814639": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03814906": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03825788": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03832673": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03837869": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03838899": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03840681": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03841143": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03843555": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03854065": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03857828": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03866082": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03868242": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03868863": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03871628": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03873416": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03874293": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03874599": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03876231": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03877472": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03877845": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03884397": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03887697": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03888257": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03888605": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03891251": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03891332": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03895866": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03899768": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03902125": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03903868": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03908618": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03908714": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03916031": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03920288": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03924679": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03929660": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03929855": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03930313": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03930630": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03933933": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03935335": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03937543": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03938244": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03942813": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03944341": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03947888": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03950228": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03954731": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03956157": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03958227": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03961711": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03967562": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03970156": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03976467": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03976657": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03977966": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03980874": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03982430": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03983396": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03991062": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03992509": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03995372": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n03998194": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04004767": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04005630": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04008634": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04009552": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04019541": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n04023962": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04026417": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04033901": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04033995": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04037443": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04039381": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04040759": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04041544": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04044716": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04049303": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04065272": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04067472": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04069434": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04070727": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04074963": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04081281": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n04086273": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04090263": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04099969": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04111531": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04116512": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04118538": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04118776": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04120489": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04125021": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04127249": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04131690": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04133789": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04136333": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04141076": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04141327": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n04141975": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04146614": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04147183": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04149813": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04152593": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04153751": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04154565": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04162706": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04179913": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04192698": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04200800": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04201297": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04204238": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04204347": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04208210": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04209133": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04209239": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04228054": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04229816": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04235860": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04238763": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04239074": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04243546": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04251144": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04252077": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04252225": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04254120": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04254680": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04254777": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04258138": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04259630": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04263257": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04264628": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04265275": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04266014": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04270147": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04273569": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04275548": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04277352": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04285008": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04286575": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04296562": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04310018": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04311004": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04311174": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04317175": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04325704": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04326547": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04328186": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04330267": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04332243": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04335435": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04336792": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04344873": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04346328": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04347754": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04350905": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04355338": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04355933": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04356056": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04357314": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04366367": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04367480": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04370456": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04371430": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04371774": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04372370": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04376876": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04380533": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04389033": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04392985": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n04398044": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04399382": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04404412": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04409515": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04417672": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04418357": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04423845": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04428191": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04429376": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04435653": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04442312": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04443257": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04447861": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04456115": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04458633": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04461696": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04462240": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04465501": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04467665": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04476259": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04479046": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04482393": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04483307": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04485082": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04486054": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04487081": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04487394": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04493381": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04501370": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04505470": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04507155": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04509417": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04515003": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04517823": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04522168": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04523525": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04525038": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04525305": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04532106": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04532670": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04536866": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04540053": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04542943": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04548280": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04548362": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04550184": {
+    "problematic": true,
+    "reviewed": true
+  },
+  "n04552348": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04553703": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04554684": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04557648": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04560804": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04562935": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04579145": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04579432": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04584207": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04589890": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04590129": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04591157": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04591713": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04592741": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04596742": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04597913": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04599235": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04604644": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04606251": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04612504": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n04613696": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n06359193": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n06596364": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n06785654": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n06794110": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n06874185": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07248320": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07565083": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07579787": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07583066": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07584110": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07590611": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07613480": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07614500": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07615774": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07684084": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07693725": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07695742": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07697313": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07697537": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07711569": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07714571": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07714990": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07715103": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07716358": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07716906": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07717410": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07717556": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07718472": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07718747": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07720875": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07730033": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07734744": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07742313": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07745940": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07747607": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07749582": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07753113": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07753275": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07753592": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07754684": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07760859": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07768694": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07802026": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07831146": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07836838": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07860988": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07871810": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07873807": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07875152": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07880968": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07892512": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07920052": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07930864": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n07932039": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09193705": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09229709": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09246464": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09256479": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09288635": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09332890": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09399592": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09421951": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09428293": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09468604": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09472597": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n09835506": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n10148035": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n10565667": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n11879895": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n11939491": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12057211": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12144580": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12267677": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12620546": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12768682": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12985857": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n12998815": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13037406": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13040303": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13044778": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13052670": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13054560": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n13133613": {
+    "problematic": false,
+    "reviewed": true
+  },
+  "n15075141": {
+    "problematic": false,
+    "reviewed": true
+  }
+}

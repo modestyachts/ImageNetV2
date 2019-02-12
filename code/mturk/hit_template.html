@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+</head>
+
+<section class="container" id="ModerationOfAnImage">
+  <div class="row">
+    <div><!-- Instructions -->
+      <br>
+      <i>This research study is being conducted by Ben Recht, Rebecca Roelofs, Ludwig Schmidt, and Vaishaal Shankar from UC Berkeley. For questions about this study, please contact ludwig@berkeley.edu and roelofs@cs.berkeley.edu. In this study, we will ask you to indicate whether given images belong to a certain object category. Occasionally, the images may contain disturbing or adult content. We would like to remind you that participation in our study is voluntary and that you can withdraw from the study at any time.</i>
+      <hr>
+      <center>
+        <h3>Which of these images contain at least one object of type</h3>
+        <h3 style="color:blue">{synset}</h3>
+            <p> <b> Definition: </b> {gloss} </p>
+      </center>
+
+      <div>
+        <b> Task: </b>
+        <p> For each of the following images, check the box next to an image if it contains at least one object of type <i>{synset}</i>.
+        Select an image if it contains the object regardless of occlusions, other objects, and clutter or text in the scene.
+        Only select images that are photographs (<b>no drawings or paintings</b>).</p>
+        <p>Please make accurate selections! </p>
+        <p> If you are unsure about the object meaning, please also consult the following Wikipedia page(s): {wiki} </p>
+        <p> If it is impossible to complete a HIT due to missing data or other problems, please return the HIT. </p>
+      </div>
+  </div>
+ </div>
+
+ <form name='mturk_form' method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+  <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+    {image_data}
+
+    <div class="form-group row">
+    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+     <center>
+        <p><input type='submit' id='submitButton' value='Submit' /></p>
+    </center>
+    </div>
+    </div>
+ </form>
+  </section>
+  <script language='Javascript'>turkSetAssignmentID();</script>
+

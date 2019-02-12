@@ -1,0 +1,32 @@
+account:
+    aws_account_id: 372094282631
+    aws_lambda_role: pywren_exec_role_1
+    aws_region: us-west-2
+
+
+lambda:
+    memory : 1536
+    timeout : 300
+    function_name : pywren_2
+
+s3:
+    bucket: imagenet2datav2
+    pywren_prefix: pywren.jobs
+
+runtime:
+    s3_bucket: imagenet2pywren
+    s3_key: pywren.runtime/pywren_runtime-3.6-imagenet2pywren.meta.json
+
+scheduler:
+    map_item_limit: 500000
+
+standalone:
+    ec2_instance_type: c4.8xlarge
+    sqs_queue_name: pywren-jobs-1
+    visibility: 10
+    ec2_ssh_key : imagenet2
+    target_ami : ami-09ff122fe3407eb8c
+    instance_name: pywren-standalone
+    instance_profile_name: pywren-standalone
+    max_idle_time: 50000
+    idle_terminate_granularity: 5000

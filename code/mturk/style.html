@@ -1,0 +1,104 @@
+<!-- End Image Moderation Layout --><!-- Open internal style sheet -->
+<style type="text/css">.thumbnail label{ 
+  display: block; 
+  position: relative;
+  border-radius:2px;
+}
+.thumbnail label:hover {
+  cursor: pointer;
+}
+.thumbnail:hover{
+    border: 1px solid #337ab7;
+}
+.thumbnail img{
+    height:300px;
+    object-fit: scale-down;
+    width: 95%;
+    max-height: 100%;
+}
+.thumbnail input{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+}
+#checkbox_none{
+  display: inline-block;
+  top:3px;
+}
+#label_none{
+  margin: 0;
+  padding: 5px 10px;
+}
+#label_none span{
+  margin-left: 15px;
+}
+#submitButton{
+  white-space: normal;
+  width: 20em;
+  height: 2em;
+  font-size : 20px;
+}
+
+#collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+
+
+.selected{
+  background: #dff0d8;
+}
+
+
+</style>
+<!-- close internal style sheet --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+
+    // The "None of the Above" checkbox selector
+    var checkAllCheckboxSelector = 'input:checkbox.moderationImageCheckAll';
+    // When any checkbox, excluding the "None of the Above" checkbox, is
+    // checked, uncheck the "None of the Above" checkbox
+    $('input:checkbox').not(checkAllCheckboxSelector).change(function(){
+      if($(this).is(':checked')) {
+        $(checkAllCheckboxSelector).prop('checked', false);
+        $(checkAllCheckboxSelector).parents('.thumbnail').removeClass('selected');
+        $(this).parents('.thumbnail').addClass('selected');
+      }else{
+        $(this).parents('.thumbnail').removeClass('selected');
+      }
+    });
+
+    // When the "None of the Above" checkbox is checked, uncheck all other
+    // checkboxes.
+    $(checkAllCheckboxSelector).change(function(){
+      var $this = $(this);
+      if($this.is(':checked')) {
+        $('input:checkbox:checked').not($this).prop('checked', false);
+        $('.thumbnail').removeClass('selected');
+        $this.parents('.thumbnail').addClass('selected');
+      }
+      else{
+        $this.parents('.thumbnail').removeClass('selected');
+      }
+    });
+
+  });
+</script>
+
