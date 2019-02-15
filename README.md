@@ -7,7 +7,7 @@ ImageNetV2 contains three test sets with 10,000 new images each.
 Importantly, these test sets were sampled *after* a decade of progress on the original ImageNet dataset.
 This makes the new test data independent of existing models and guarantees that the accuracy scores are not affected by adaptive overfitting.
 We designed the data collection process for ImageNetV2 so that the resulting distribution is as similar as possible to the original ImageNet dataset.
-Our paper ["Do ImageNet Classifiers Generalize to ImageNet?"](https://arxiv.org/abs/1806.00451) describes ImageNetV2 and associated experiments in detail.
+Our paper ["Do ImageNet Classifiers Generalize to ImageNet?"](http://people.csail.mit.edu/ludwigs/papers/imagenet.pdf) describes ImageNetV2 and associated experiments in detail.
 
 In addition to the three test sets, we also release our pool of candidate images from which the test sets were assembled.
 Each image comes with rich metadata such as the corresponding Flickr search queries or the annotations from MTurk workers.
