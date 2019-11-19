@@ -197,3 +197,11 @@ where $DATASET is one of
 
 The $MODELS parameter is a comma-separated list of model names in the [torchvision](https://pytorch.org/docs/stable/torchvision/models.html) or [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch) repositories.
 Alternatively, $MODELS can also be `all`, in which case all models are evaluated.
+
+
+# License
+
+Unless noted otherwise in individual files, the code in this repository is released under the MIT license (see the `LICENSE` file).
+The `LICENSE` file does *not* apply to the actual image data.
+The images come from Flickr which provides corresponding license information.
+They can be used the same way as the original ImageNet dataset.
