@@ -41,7 +41,7 @@ We refer to our paper for a detailed description of these test sets and the revi
 
 ## Loading a Test Set
 
-You can download the test sets from the following url: http://imagenetv2public.s3-website-us-west-2.amazonaws.com/. There is a link for each individual dataset and the ImageNet datasets must be decompressed before use. 
+You can download the test sets from the following url: https://huggingface.co/datasets/vaishaal/ImageNetV2/tree/main. There is a link for each individual dataset and the ImageNet datasets must be decompressed before use. 
 
 To load the dataset, you can use the [`ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder) class in [PyTorch](https://pytorch.org/) on the extracted folder. 
 
