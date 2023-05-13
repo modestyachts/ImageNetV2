@@ -1,7 +1,7 @@
 # ImageNetV2
 The ImageNetV2 dataset contains new test data for the [ImageNet](www.image-net.org) benchmark.
 This repository provides associated code for assembling and working with ImageNetV2.
-The actual test sets are stored [in a separate location](http://imagenetv2public.s3-website-us-west-2.amazonaws.com/).
+The actual test sets are stored [in a separate location](https://huggingface.co/datasets/vaishaal/ImageNetV2/tree/main).
 
 ImageNetV2 contains three test sets with 10,000 new images each.
 Importantly, these test sets were sampled *after* a decade of progress on the original ImageNet dataset.
